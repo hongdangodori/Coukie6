@@ -1,0 +1,120 @@
+/* reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+menu,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+th,
+td,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Helvatica, sans-serif;
+}
+
+article,
+aside,
+hgroup,
+header,
+footer,
+figure,
+figcaption,
+nav,
+section,
+time,
+mark,
+canvas,
+video,
+audio,
+details,
+summary {
+  display: block;
+}
+
+dl,
+dt,
+dd,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+form {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+body{
+	color: #4E5259;
+	background-color: #D3D6DB;
+}
+div,nav{
+	background-color: white;
+}
+.container{
+  width: 100%;
+  height: 400px;
+}

@@ -1,0 +1,93 @@
+
+.navbar{
+	z-index: 8;
+	position: fixed;
+	width:100%;
+	height: 55px;
+	margin: 0 0;
+	border-bottom: 1px solid #9B9EA3;
+}
+.navbar .navbar-header{
+	padding-top: 10px;
+	position: absolute;
+	display: inline;
+	float: left;
+	top:-1px;
+	left:10px;
+}
+.brand{
+	position: relative;
+	top: -5px;
+	display: inline;
+	font-size: 38px;
+	font-weight: bold;
+	height: 38px;
+	color: #4E5259;
+}
+
+
+.navbar-dropdown{
+	display: inline-block;
+	background-image: url('./icon/icon_list.png') ;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+}
+.navbar-dropdown:active{
+	position: relative;
+	top: 1px
+}
+.navbar-dropdown li{
+	display: block;
+	visibility: hidden;
+}
+
+
+.navbar .navbar-nav-right{
+	position: absolute;
+	float:right;
+	top:10px;
+	right:5px;
+}
+
+
+.navbar-list{
+	list-style-type: none;
+	position: relative;
+	margin: 0 0;
+	height: 40px;
+}
+.navbar .navbar-header .navbar-list{
+	
+}
+
+.navbar-list li{
+	margin: 0 0;
+	display: inline;
+	padding-right:3px;
+}
+
+.cart-button{
+	display: inline;
+	width:40px;
+	height: 40px;
+}
+
+.cart-button:active{
+	position: relative;
+	top: 1px;
+}
+.navbar-list li a{
+	display: inline;
+}
+.my-menu-button{
+	display: inline;
+	width:40px;
+	height: 40px;
+}
+.my-menu-button:active{
+	position: relative;
+	top: 1px;
+}
+

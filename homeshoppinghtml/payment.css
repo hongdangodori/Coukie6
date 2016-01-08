@@ -1,0 +1,209 @@
+
+.product-img-frame{
+	position: relative;
+	display: inline;
+	left: 2%;
+	width:110px;
+	height:110px;
+}
+.product-img{
+	width:110px;
+	height:110px;	
+}
+
+.product-option-info{
+	position: relative;
+	display: inline;
+	width: 58%;
+	right: 2%;
+	float: right;
+}
+
+.product-option-info .option-name{
+	font-weight: bold;
+}
+
+.product-card{
+	color: black;
+	position: relative;
+	width: 100%;
+	height: 130px;
+}
+
+.product-card-frame{
+	position: relative;
+	width: 100%;
+	height: 130px;
+	margin-top: 10px; 
+	border-bottom: 1px solid gray;
+}
+
+
+.option-number{
+	display: inline;
+}
+
+.product-option-info .option-description{
+	position: relative;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	padding-top: 8px;
+	left: 5px;
+	width: 95%;
+	white-space:nowrap;
+	word-wrap:normal	
+}
+.product-option-price{
+	padding-top: 6px;
+	position: relative;
+	width: 96%;
+	text-align: right;
+	font-size: 14px;
+}
+
+.product-option-price label{
+	float: left;
+}
+
+.currency{
+	display: inline;
+}
+.coupang-price{
+	position: relative;
+	float: left;
+	display: inline;
+	left: 5px;
+	color:red;
+}
+
+.deal-section{
+	position: relative;
+	padding-top: 80px;
+	width: 96%;
+	left: 2%;
+	height: 300px;
+	overflow: scroll;
+
+}
+.deal-section .header{
+	position: relative;
+	left: 2%;
+
+}
+.deal-list{
+	width: 100%;
+
+}
+
+.product-delivery-price{
+	padding-top: 6px;
+	position: relative;
+	width: 96%;
+	text-align: right;
+	font-size: 14px;
+}
+.product-delivery-price label{
+	display: inline;
+	position: relative;
+	float: left;
+}
+
+.plus{
+	display: inline;
+}
+
+.purchase-button-frame{
+	position: relative;
+	height: 100px;
+	top:0px;
+	text-align: center;
+}
+
+.purchase-button{
+	position: relative;
+	width: 50%;
+	text-align: center;
+	background-color:#0089FF;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:13px 32px;
+	text-decoration:none;
+}
+.purchase-button:hover {
+	
+}
+.purchase-button:active {
+	top:1px;
+}
+.payment-section{
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+.total-price-frame{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	text-align: right;
+}
+.total-price{
+	position: relative;
+	width: 100%;
+	float: right;
+}
+.payment-form{
+	position: relative;
+	height: 250px;
+	width: 96%;
+	left: 2%;
+
+}
+.form-head{
+	padding-bottom: 10px;
+	position: relative;
+	left: 2px;
+}
+.form-body{
+	position: relative;
+	height: 200px;
+	padding-top: 5px;
+	width: 96%;
+	left:2%;
+	border-bottom: 1px solid blue;
+}
+
+.form-input-module{
+	position: relative;
+	left:2%;
+	width: 96%;
+	height: 50px;
+	display: block;
+
+}
+
+.form-input-module .form-label{
+	position: relative;
+	display: inline;
+	padding-right: 20px;
+	width: 50px;
+	height: 30px;
+}
+.phone-selector{
+	zoom:1.2;
+}
+.form-input-module .text-input-form{
+	float: right;
+	position: relative;
+	display: inline;
+	height: 20px;
+
+}
+input{
+	border:1px solid gray;
+}

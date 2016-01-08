@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./cart_list.css"> -->
+	<link rel="stylesheet" type="text/css" href="./navbar.css">
+	<link rel="stylesheet" type="text/css" href="./footer_bar.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	    $(".prev").click(function(){
+	        var chk = parseInt($(".page-index").html());
+	        if(chk > 1) {
+	        	$(".page-index").html(chk - 1);
+	        	$("#product-list-"+chk).css("visibility",'hidden');
+	        	$("#product-list-"+chk).css("overflow",'hidden');
+	        	$("#product-list-"+(chk-1)).css("visibility",'visible');
+	        	$("#product-list-"+(chk-1)).css("overflow",'visible');
+	        }
+	        if(chk == 1){
+	        	$(this).attr('disabled','disabled');
+	        }
+	    });
+
+	    $(".next").click(function(){
+	       var chk = parseInt($(".page-index").html());
+	        if(chk < 3) {
+	        	$(".page-index").html(chk + 1);
+	        	$("#product-list-"+chk).css("visibility",'hidden');
+	        	$("#product-list-"+chk).css("overflow",'hidden');
+	        	$("#product-list-"+(chk+1)).css("visibility",'visible');
+	        	$("#product-list-"+(chk+1)).css("overflow",'visible');
+	        }
+	        if(chk == 3){
+	        	$(this).attr('disabled','disabled');
+	        }
+	    });
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-header">
+				<ul class="navbar-list">
+					<li>
+						<ul class="navbar-dropdown">
+							
+						</ul>
+					</li>
+					<li>
+						<div class="brand">Coupang</div>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-nav-right">
+				<ul class="navbar-list">
+					<li>
+						<a href="#" ><img class="cart-button"src="./icon/icon_cart.png"></a>
+					</li>
+					<li>
+						<a href="#" ><img class="my-menu-button"src="./icon/icon_my.png"></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div class="container">
+			<div class="pdp-header">
+				<div class="pdp-category-bar">
+					<a class="pdp-category" href="#">
+						HOME
+					</a> 
+					&gt;
+					<a class="pdp-category" href="#">
+						쇼핑
+					</a>
+					&gt;
+					<a class="pdp-category" href="#">
+						여성 의류
+					</a>
+					&gt;
+					<a class="pdp-category active" href="#">
+						상의
+					</a>
+				</div>
+				<div class="pdp-img-frame">
+					<img class="pdp-img" src="http://placehold.it/600x400">
+				</div>
+				<div class="deal-info">
+						<div class="deal-name">
+							￼NEW 임페리얼 분유!!! 특가!! ￼
+						</div>
+						<div class="deal-info-minimum">
+							<div class="sale-info">
+								50% 할인 
+							</div>
+							<div class="saled-price">
+								8,000<div class="currency">원</div>
+							</div>
+							<div class="before-sale-price">
+								16,000<div class="currency">원</div> 
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="pdp-body">
+				<div class="product-list-header">
+					<div class="head">상품 설명 목록</div>
+					<div class="pagination">
+						<button class="prev">
+							&lt;
+						</button>
+						<div class="page-index">
+							1
+						</div>  
+						<button class="next">
+							&gt;
+						</button>
+					</div>
+				</div>
+				<div class="product-list" id="product-list-1"> 
+					<div class="product-card-frame" id="product1">
+						<a href="#" class="product-card" id="product1">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 1 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 차콜 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card" >
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 2 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 블루 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 3 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 레드 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="product-list" id="product-list-2" style="visibility:hidden"> 
+					<div class="product-card-frame" id="product1">
+						<a href="#" class="product-card" id="product1">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 4 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 레드벨벳 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card" >
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 5 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 골드 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 6 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 파이아 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="product-list" id="product-list-3" style="visibility:hidden"> 
+					<div class="product-card-frame" id="product1">
+						<a href="#" class="product-card" id="product1">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 7 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 프리즈 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card" >
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 8 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 칼린 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="product-card-frame" id="product2">
+						<a href="#" class="product-card">
+							<div class="product-body">
+								<div class="product-img-frame"><img class="product-img" src="http://placehold.it/220x220"></div>
+								<div class="product-option-info">
+									<div class="option-name">
+										<div class="option-number">
+											선택 9 )
+										</div>
+										 남성 프리즘 다운 베스트(WF4MMDV613)_CH! 리얼레드 100
+									</div>
+									<div class="option-description">상세상세상세삿ㅇ상세상세상세
+										상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상
+										세상세상세상세상세상세삿ㅇ상세상세상세상세상세상세삿ㅇ상세상세상세삿ㅇ상세상세상세삿ㅇ</div>
+									<div class="product-option-price">
+										<div class="coupang-price">쿠팡가</div>
+										10,000,000,000
+										<div class="currency">
+											원
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<footer>
+		<div class="purchase-bar pdp-mode">
+			<div class="purchase-bar-dragger"></div>
+			<div class="purchase-info">
+				<div class="product-select">
+					<select class="product-selection-bar">
+						<option selected="true">상품을 선택하세요.</option>
+ 						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+				<div class="option-select">
+					<select class="option-selection-bar">
+						<option selected="true">옵션을 선택하세요.</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+				</div>
+				<div class="purchase-info pdp-mode-info-menu">
+					<div class="total-product-price pdp-mode-info">
+						<label>상품가</label>
+						<div class="price">
+							1,000,000
+							<div class="currency">원</div>
+						</div>
+					</div>
+					<div class="total-delivery-price pdp-mode-info">
+						<label>배송비</label>
+						<div class="price">
+							<div class="plus">+</div>
+							2,500
+							<div class="currency">원</div>
+						</div>
+
+					</div>
+					<div class="total-price pdp-mode-info">
+						<label>총주문금액</label>
+						<div class="price">
+							1,002,500
+							<div class="currency">원</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="purchase-button-frame">
+				<a href="#" class="purchase-button purchase-button-left">카트에 담기</a>
+				<a class="purchase-button purchase-button-right" href="#">구매하기</a>
+			</div>
+		</div>
+	</footer>
+</body>

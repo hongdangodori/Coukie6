@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="./reset.css">
+	<link rel="stylesheet" type="text/css" href="./cart_list.css">
+	<link rel="stylesheet" type="text/css" href="./navbar.css">
+	<link rel="stylesheet" type="text/css" href="./footer_bar.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+	    $("#check_all").click(function(){
+	        var chk = $(this).is(":checked");//.attr('checked');
+	        if(chk) 
+	        	$(".mycheckbox").attr('checked', true);
+	        else  
+	        	$(".mycheckbox").attr('checked', false);
+	    });
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-header">
+				<ul class="navbar-list">
+					<li>
+						<ul class="navbar-dropdown">
+							
+						</ul>
+					</li>
+					<li>
+						<div class="brand">Coupang</div>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-nav-right">
+				<ul class="navbar-list">
+					<li>
+						<a href="#" ><img class="cart-button"src="./icon/icon_cart.png"></a>
+					</li>
+					<li>
+						<a href="#" ><img class="my-menu-button"src="./icon/icon_my.png"></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div class="carts-list-handler">
+			<div class="total-carts-checkbox">
+					<input class="mycheckbox" name="total_check" value="total_check" type="checkbox" id="check_all" >
+					<label>전체 선택</label>
+			</div>
+			<div class="total-carts-delete">
+				<a href="#" class="total-carts-delete-button">전체 삭제</a>
+			</div>
+		</div>
+		<div class="carts-list">
+			<div class="cart-card" id="cart1">
+				<div class="cart-header">
+					<div class="cart-checkbox">
+						<input type="checkbox" class="mycheckbox" name="cart1_check" value="cart1_check">
+					</div>	
+					<div class="deal-name">2015 겨울아우터와 셔츠/니트 모음</div>
+					<div class="deal-delete">
+						<a class="deal-delete-button" href="#">
+							x
+						</a>						
+					</div>
+				</div>
+				<div class="cart-body">
+					<div class="deal-img-frame"><img class="deal-img" src="http://placehold.it/220x220"></div>
+					<div class="option-info">
+						<div class="option-name">선택3)남성 프리즘 다운 베스트(WF4MMDV613)_CH! 차콜 100</div>
+						<div class="option-price">
+							10,000,000,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+						<div class="option-quantity-frame">
+							<select class="option-quantity">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10+</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="cart-footer">
+					<!--리스트에 노출 될 정보: 체크박스, 딜이미지, 딜명, 옵션명, 옵션가격, 수량 선택박스, 삭제버튼, 배송비, 주문합계)-->
+					<div class="delivery-price">
+						<label>배송비</label>
+						<div class="price">
+							<div class="plus">
+								+
+							</div>
+							2,500
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+					<div class="total-deal-price">
+						<label>주문 합계</label>
+						<div class="price">
+							1,260,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-card" id="cart2">
+				<div class="cart-header">
+					<div class="cart-checkbox">
+						<input type="checkbox" class="mycheckbox" name="cart1_check" value="cart1_check">
+					</div>	
+					<div class="deal-name">2015 겨울아우터와 셔츠/니트 모음</div>
+					<div class="deal-delete">
+						<a class="deal-delete-button" href="#">
+							x
+						</a>						
+					</div>
+				</div>
+				<div class="cart-body">
+					<div class="deal-img-frame"><img class="deal-img" src="http://placehold.it/220x220"></div>
+					<div class="option-info">
+						<div class="option-name">선택3)남성 프리즘 다운 베스트(WF4MMDV613)_CH! 차콜 100</div>
+						<div class="option-price">
+							10,000,000,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+						<div class="option-quantity-frame">
+							<select class="option-quantity">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10+</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="cart-footer">
+					<!--리스트에 노출 될 정보: 체크박스, 딜이미지, 딜명, 옵션명, 옵션가격, 수량 선택박스, 삭제버튼, 배송비, 주문합계)-->
+					<div class="delivery-price">
+						<label>배송비</label>
+						<div class="price">
+							<div class="plus">
+								+
+							</div>
+							2,500
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+					<div class="total-deal-price">
+						<label>주문 합계</label>
+						<div class="price">
+							1,260,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-card" id="cart3">
+				<div class="cart-header">
+					<div class="cart-checkbox">
+						<input type="checkbox" class="mycheckbox" name="cart1_check" value="cart1_check">
+					</div>	
+					<div class="deal-name">2015 겨울아우터와 셔츠/니트 모음</div>
+					<div class="deal-delete">
+						<a class="deal-delete-button" href="#">
+							x
+						</a>						
+					</div>
+				</div>
+				<div class="cart-body">
+					<div class="deal-img-frame"><img class="deal-img" src="http://placehold.it/220x220"></div>
+					<div class="option-info">
+						<div class="option-name">선택3)남성 프리즘 다운 베스트(WF4MMDV613)_CH! 차콜 100</div>
+						<div class="option-price">
+							10,000,000,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+						<div class="option-quantity-frame">
+							<select class="option-quantity">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10+</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="cart-footer">
+					<!--리스트에 노출 될 정보: 체크박스, 딜이미지, 딜명, 옵션명, 옵션가격, 수량 선택박스, 삭제버튼, 배송비, 주문합계)-->
+					<div class="delivery-price">
+						<label>배송비</label>
+						<div class="price">
+							<div class="plus">
+								+
+							</div>
+							2,500
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+					<div class="total-deal-price">
+						<label>주문 합계</label>
+						<div class="price">
+							1,260,000
+							<div class="currency">
+								원
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="purchase-bar">
+			<div class="purchase-bar-dragger">
+			</div>
+			<div class="purchase-info">
+				<div class="total-product-price">
+					<label>총 상품가격</label>
+					<div class="price">
+						1,000,000
+						<div class="currency">원</div>
+					</div>
+				</div>
+				<div class="total-delivery-price">
+					<label>총 배송비</label>
+					<div class="price">
+						<div class="plus">+</div>
+						2,500
+						<div class="currency">원</div>
+					</div>
+
+				</div>
+				<div class="total-price">
+					<label>결제예정금액</label>
+					<div class="price">
+						1,002,500
+						<div class="currency">원</div>
+					</div>
+				</div>
+			</div>
+			<a class="purchase-button" href="#">구매하기</a>
+		</div>
+	</footer>
+</body>
